@@ -47,11 +47,15 @@ Le système est basique pour une première version, mais il est entièrement sca
 ## Processus de déploiement
 Commencer par générer une clé ssh à l’aide de la commande suivante afin que la clé privé et publique soit trouvé dans /root/.ssh/ (cela servira pour le provisioning) : 
 
-`ssh-keygen -t ed25519`
+```
+ssh-keygen -t ed25519
+```
 
 Installez ensuite le CLI Scaleway pour obtenir les credentials, et pour pouvoir insérer votre clé publique dans votre projet scaleway (mettre « yes » lorsque l’on vous le demande, car elle sera détectée) :
 
-`scw init`
+```
+scw init
+```
 
 Créez votre répertoire pour abriter le projet Terraform : 
 
@@ -62,11 +66,15 @@ cd my_terraform_project
 
 Clonez le répertoire github : 
 
-`git clone https://github.com/SuperStar94/TerraformProject`
+```
+git clone https://github.com/SuperStar94/TerraformProject
+```
 
 À la racine du dossier root du projet terraform, ainsi que dans les dossiers « /modules/web » et « /modules/database » faite la commande : 
 
-`terraform init`
+```
+terraform init
+```
 
 À la racine du dossier root du projet terraform faite (entrez « yes » pour la deuxième commande) : 
 
