@@ -11,9 +11,9 @@ Dans ce readme j’exposerai l’architecture choisie qui a été déployer chez
 ## Choix de l’architecture :
 
 ### Network
-•	1 VPC
-•	2 Private Network (app_private_network ; database_private_network)
-•	2 Public Gateway (public_gateway_app ; public_gateway_data)
+- 1 VPC
+- 2 Private Network (app_private_network ; database_private_network)
+- 2 Public Gateway (public_gateway_app ; public_gateway_data)
 
 ### Load balancer 
 Pour le projet, j’ai décidé de mettre en place un load balancer en frontal dont le rôle va être de répartir la charge en direction du serveur actif située en « backend ». En « frontend » et « backend », nous aurons du http et lorsque l’on pointera sur l’adresse IP publique du load balancer : nous atterrirons sur l’interface du serveur qui est en « backend ».
