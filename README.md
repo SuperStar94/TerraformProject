@@ -1,4 +1,5 @@
- <insérer_image>
+ [Capture d’écran 2022-01-30 234022](https://user-images.githubusercontent.com/93139549/151731771-de6fe870-e046-4af7-b14d-581ed8dc542d.png)
+
  
 # Terraform-Scaleway 
 
@@ -35,7 +36,8 @@ Un système de traduction d’adresse de port (PAT), est configuré pour que l�
 
 ## Architecture système du projet
  
- <insérer_image>
+ ![terraform drawio](https://user-images.githubusercontent.com/93139549/151731798-e4f2a369-6f4a-404c-92b8-3f1a23fc72b2.png)
+
  
 Le système est basique pour une première version, mais il est entièrement scalable pour des situations d’évolutions et voici des pistes de scaling : 
 
